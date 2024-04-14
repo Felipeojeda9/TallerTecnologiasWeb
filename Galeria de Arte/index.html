@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Arte</title>
+    <style>
+        /* Estilos CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #000000;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        h1, h2 {
+            margin-top: 0;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 20px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Galería de Arte</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>
+
+<section id="inicio" class="container">
+    <h2>Galeria de arte moderno</h2>
+    <p>Galeria enfocada en el arte y en lo moderno</p>
+    <img src="imagenes/GaleriaDeArte02.jpg" alt="inicio">
+
+</section>
+
+<section id="galeria" class="container">
+    <h2>Nuestras obras!</h2>
+    <div class="gallery">
+        <img src="imagenes/jker9_breathtaking_ethereal_female_desert_empress_archetype_gal_3b42403b-cf85-41df-be16-0f1550d224f8.png" alt="Obra de arte 1">
+        <img src="imagenes/jker9_breathtaking_ethereal_female_desert_empress_archetype_gal_7876c13c-1072-4ae1-ad15-217101399698.png" alt="Obra de arte 2">
+        <img src="imagenes/jker9_breathtaking_ethereal_female_empress_archetype_galaxy_des_97e6c17d-74e0-468b-b35a-054713ee6c60.png" alt="Obra de arte 3">
+        <img src="imagenes/jker9_breathtaking_ethereal_female_empress_archetype_galaxy_fde3b32c-7c0b-476e-a668-f1da0d2ee3d7.png" alt="Obra de arte 4">
+        <img src="imagenes/jker9_cyberpunk_samurai_city_darkness_aa368f31-e06e-4a47-a7c1-a4cdda3cdc4b.png" alt="Obra de arte 5">
+        <img src="imagenes/jker9_golden_swan_in_dark_nigth_driving_crazy_mind_e65adce6-9cab-461a-8470-79b811c4d003.png" alt="Obra de arte 6">
+        <img src="imagenes/jker9_horrific_being_floating_above_the_chosen_few_8k_dark_mood_2ca1dfd5-67a3-4551-b378-d0174b7f56cb.png" alt="Obra de arte 7">
+        <img src="imagenes/jker9_mujer_peleando_con_espada_en_medio_de_una_batalla_ac481af6-df25-4e72-8782-7ffe9dda7b28.png" alt="Obra de arte 8">
+    </div>
+</section>
+
+<section id="contacto" class="container">
+    <h2>Contacto</h2>
+    <p>¡Estamos emocionados de saber de ti! Contáctanos para más información sobre nuestras obras de arte o para programar una visita.</p>
+    <p>Dirección: Calle falsa 123</p>
+    <p>Teléfono: 123456789</p>
+    <p>Email: galeria@contacto.cl</p>
+    <h3>Formulario de Contacto</h3>
+        <form action="#" method="post">
+            <input type="text" name="nombre" placeholder="Nombre">
+            <input type="text" name="email" placeholder="Email">
+            <textarea name="mensaje" placeholder="Mensaje"></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+
+</section>
+
+</body>
+</html>
